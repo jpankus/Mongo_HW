@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+     <style>
+      body { background-color: #fff }
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      #header{
+          margin:30;
+          padding:20;
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+      }
+      #notes {
+        float: right;
+        width: 30%;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: #FCF5C7;
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+    </style>
+  <head>
+    <!-- Tab Title -->
+    <title>Onion Scraper</title>
+    <!-- View Port Size -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Materialize - Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <!-- Materialize - Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <body>
+  
+    <!-- Fixed Nav Bar -->
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="" class="brand-logo header">Onion Scraper</a>
+          <a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          
+        </div>
+      </nav>
+    </div>
+      
+
+    <!-- Page Content -->
+    <main> 
+
+      <!-- Site Info Container -->
+      <div class="container wrapper">
+        <ul class="collection with-header">
+          <li class="collection-header"><h4>Welcome to Onion Scraper!</h4></li>
+          <li class="collection-item">Read and Comment on news articles that were scrapped from The Onion.</li>
+        
+        </ul>
+      </div>
+    
+
+      <!-- Article Container... List all Articles Inside Here -->
+      <div class="container" id="articles"></div>
+      <div id="notes"></div>
+        
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="footer-copyright">
+      </div>
+    </footer>
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <!-- Materialize - Boo hate it...but it kinda worked this time -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+
+</html>
